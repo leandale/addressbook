@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-LdAddressbook::Application.load_tasks
+Addressbook::Application.load_tasks
