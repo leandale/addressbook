@@ -15,9 +15,9 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: ld-addressbook_development
+  database: addressbook_development
   pool: 5
-  username: ld-addressbook
+  username: addressbook
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -41,15 +41,15 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: ld-addressbook_test
+  database: addressbook_test
   pool: 5
-  username: ld-addressbook
+  username: addressbook
   password:
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: ld-addressbook_production
+  database: addressbook_production
   pool: 5
-  username: ld-addressbook
+  username: addressbook
   password:
