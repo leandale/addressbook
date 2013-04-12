@@ -20,10 +20,8 @@ ActiveRecord::Schema.define(:version => 20130412213308) do
   end
 
   create_table "groups_people", :force => true do |t|
-    t.integer  "group_id"
-    t.integer  "person_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.integer "group_id"
+    t.integer "person_id"
   end
 
   create_table "people", :force => true do |t|
