@@ -1,9 +1,11 @@
 Addressbook::Application.routes.draw do
   resources :groups
-
-
   resources :people
 
+  match 'groups/:id/people' => 'groups/people#index', :via => :get
+  match 'groups/:id/people/:person_id' => 'group/people#show', :via => :get
+  match 'groups/:id/people' => 'groups/people#create', :via => :post
+  match 'groups/:id/people/:person_id' => 'group/people#destroy', :via => :delete
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
